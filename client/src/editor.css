@@ -1,0 +1,57 @@
+.editor {
+    user-select: none;
+    width : 256px;
+}
+
+.editor > .canvas {
+    width: 256px;
+    height: 256px;
+}
+
+.palette {
+    box-sizing: border-box;
+    border-left: 1px solid rgba(255,255,255,0.5);
+    height: 50px;
+    width: 100%;
+    top: 0;
+    font-size: 0;
+}
+
+.palette .color-container {
+    width: calc(100% - 50px);
+    position: relative;
+    left: 48px;
+    top: -48px;
+}
+
+.palette .color {
+    box-sizing: border-box;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(0,0,0,0.5);
+    border-left: 1px solid rgba(0,0,0,0.5);
+    border-radius: 2px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.palette .color:nth-child(1) {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top: 0;
+}
+
+.palette .color.primary.color {
+    width: 48px;
+    height: 48px;
+}
+
+.palette .color > input {
+    width: 64px;
+    height: 64px;
+    margin: -8px 0 0 -8px;
+    padding: 0;
+    cursor: default;
+}
